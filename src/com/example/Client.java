@@ -17,7 +17,7 @@ public class Client {
     public static void main(String[] args) throws IOException {
         DatagramSocket socket = new DatagramSocket();
         String info = "111111111";
-        DatagramPacket dp = new DatagramPacket(info.getBytes(),info.length(),InetAddress.getByName("121.199.28.87"),8800);
+        DatagramPacket dp = new DatagramPacket(info.getBytes(),info.length(),InetAddress.getByName("***.***.**.**"),8800);
         socket.send(dp);
         socket.close();
     }
